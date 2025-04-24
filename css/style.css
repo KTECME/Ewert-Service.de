@@ -43,6 +43,7 @@ html {
 }
 
 body {
+    outline: 5px solid maenta !important;
     color: #666666;
     font-size: 14px;
     line-height: 1.80857;
