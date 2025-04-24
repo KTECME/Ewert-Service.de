@@ -110,8 +110,9 @@ h6 {
     box-sizing: border-box;
 }
 .banner_img {
-    width: 917px;
-    height: 400px;
+    width: auto;
+    height: auto;
+    text-align: center
   }
 h1 a,
 h2 a,
