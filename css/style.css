@@ -1078,3 +1078,40 @@ span.padding_left_15 {
   }
 }
 
+#carouselExampleIndicators .carousel-item.active {
+  /* !important, damit es Bootstrap override’t */
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  position: relative;   /* für absolut positionierte Überschrift */
+}
+
+/* 2) Überschrift absolut oben zentrieren */
+#carouselExampleIndicators .banner_taital {
+  position: absolute;
+  top: 70px;                   /* wie gehabt */
+  left: 50%;                   /* Ausgangspunkt: Mitte */
+  transform: translateX(-50%); /* wirklich mittig */
+  width: 100%;                 /* nimmt die volle Slider-Breite */
+  text-align: center;          /* Text zentrieren */
+}
+
+/* 3) Bild-Container flexibel machen */
+#carouselExampleIndicators .banner_img {
+  width: 100%;                 /* passt sich der Slide-Breite an */
+  max-width: none;             /* überschreibt evtl. Bootstrap-Limits */
+  margin: 0;                   /* keine Ränder mehr */
+  overflow: hidden;            
+  display: flex;               
+  justify-content: center;     
+  align-items: center;         
+}
+
+/* 4) Bild selbst responsiv */
+#carouselExampleIndicators .banner_img img {
+  display: block;
+  width: 100%;                 
+  height: auto;                
+  object-fit: cover;           
+}
+}
