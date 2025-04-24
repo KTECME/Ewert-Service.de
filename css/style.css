@@ -1049,14 +1049,14 @@ span.padding_left_15 {
     margin-top: 90px;
 }
 
-##carouselExampleIndicators {
+#carouselExampleIndicators {
     max-width: 800px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-##carouselExampleIndicators img {
+#carouselExampleIndicators img {
     display: block;
     width: 100%;
     height: auto;
